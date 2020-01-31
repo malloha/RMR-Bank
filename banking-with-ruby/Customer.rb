@@ -1,12 +1,22 @@
 class Customer
-  @@customer_serial_num = 1000
   def initialize(first_name, last_name,ssn, address)
     @first_name = first_name
     @last_name = last_name
     @ssn = ssn
     @address = address
-    @customer_number= @@customer_serial_num
-    @@customer_serial_num += 1
+
+
+
+    customer_num = File.open(File.dirname(__FILE__ )+"/Customers.txt", "r").to_a
+    if(customer_num.empty?)
+      @customer_number = 2000
+    else
+    @customer_number =customer_num.last.split(" ")[0].to_i + 1
+    end
+    customer = File.open(File.dirname(__FILE__ )+"/Customers.txt", "a")
+    customer.puts "#{@customer_number} #{@first_name} #{@last_name} #{@ssn} #{@address}"
+
+
     p "Customer created"
     print_details
   end

@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b51e966-b071-4e1c-973e-c708cf33d36a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Accounts.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Customers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Transactions.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accounts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Accounts.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Customer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Main.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Transactions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/Transactions.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +40,24 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Ruby.Main">
+    <configuration name="Accounts" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="banking-with-ruby" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/Accounts.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="banking-with-ruby" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
@@ -109,6 +133,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Ruby.Main" />
+        <item itemvalue="Ruby.Accounts" />
         <item itemvalue="Ruby.main" />
         <item itemvalue="Ruby.account" />
         <item itemvalue="Ruby.transaction" />
@@ -139,7 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580480017516</updated>
       <workItem from="1580480018674" duration="7622000" />
-      <workItem from="1580489381694" duration="908000" />
+      <workItem from="1580489381694" duration="7076000" />
     </task>
     <servers />
   </component>
@@ -155,30 +180,35 @@
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="415" y="122" key="#account/0.23.1440.827@0.23.1440.827" timestamp="1580485645722" />
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1580488083952">
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1580500940984">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1580488083952" />
-    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1580488083951">
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1580500940984" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1580500940982">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1580488083951" />
-    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1580488083951">
+    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1580500940982" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1580500940982">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1580488083951" />
-    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1580488083952">
+    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1580500940982" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1580500940983">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
-    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1580488083952" />
-    <state x="385" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1580484503694">
+    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1580500940983" />
+    <state x="378" y="58" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580495728663">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
-    <state x="385" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827@0.23.1440.827" timestamp="1580484503694" />
+    <state x="378" y="58" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.827@0.23.1440.827" timestamp="1580495728663" />
+    <state x="385" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1580495648901">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="385" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827@0.23.1440.827" timestamp="1580495648901" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/banking_with_ruby@Accounts.rcov" NAME="Accounts Coverage Results" MODIFIED="1580495715193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="banking-with-ruby" />
     <SUITE FILE_PATH="coverage/banking_with_ruby@main.rcov" NAME="main Coverage Results" MODIFIED="1580484451340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="banking-with-ruby" />
-    <SUITE FILE_PATH="coverage/banking_with_ruby@Main.rcov" NAME="Main Coverage Results" MODIFIED="1580488083911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="banking-with-ruby" />
+    <SUITE FILE_PATH="coverage/banking_with_ruby@Main.rcov" NAME="Main Coverage Results" MODIFIED="1580499554364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="banking-with-ruby" />
     <SUITE FILE_PATH="coverage/banking_with_ruby@transaction.rcov" NAME="transaction Coverage Results" MODIFIED="1580483323086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="banking-with-ruby" />
     <SUITE FILE_PATH="coverage/banking_with_ruby@account.rcov" NAME="account Coverage Results" MODIFIED="1580483532860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="banking-with-ruby" />
   </component>

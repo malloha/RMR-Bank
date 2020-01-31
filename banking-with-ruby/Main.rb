@@ -1,13 +1,15 @@
 require_relative './Customer'
 require_relative './Transactions'
 require_relative './Accounts'
+
+
 def menu
   loop do
-  p "Welcome to RMR bank"
-  p "MENU Options"
-  p "New Customer Press 1"
-  p "Existing Customer Press 2 "
-  p "To exit press 0"
+  puts "Welcome to RMR bank"
+  puts "MENU Options"
+  puts "New Customer Press 1"
+  puts "Existing Customer Press 2 "
+  puts "To exit press 0"
   option = gets.chomp.to_i
 
 #NEW CUSTOMER MENU
@@ -58,16 +60,19 @@ def menu
       acc_option= gets.chomp.to_i
 
       if(acc_option == 1)
-        p "Enter account number"
-        account_from = gets.chomp
+        p "Enter Customer Number"
+        current_customer = gets.chomp
+
+        p "Enter Account Number"
+        current_account = gets.chomp
+
         p "Enter deposit amount"
         amount = gets.chomp.to_i
 
-        current_account = Account.new(account_from)
-        current_account.deposit(amount)
+        current_acc = Account.new(current_customer)
+        current_acc.account_number = current_account
+        current_acc.deposit(amount)
 
-
-        transaction = Transaction.new("d", amount, account_from, account_to)
       end
       elsif(acc_option == 2)
 

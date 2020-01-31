@@ -14,7 +14,7 @@ class Transaction
     end
     transaction = File.open(File.dirname(__FILE__ )+"/Transactions.txt", "a")
     transaction.puts "#{@tranaction_num} #{transaction_type} #{amount} #{@time_stamp} #{@account_from} #{account_to}"
-
+    transaction.close
   end
 
 

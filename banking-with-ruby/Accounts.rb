@@ -2,6 +2,8 @@ require_relative './Transactions'
 
 class Account
 
+  attr_accessor :account_number, :balance
+
   def initialize(customer_number)
     @balance = 0
     @overdrafts = 0
@@ -29,16 +31,16 @@ class Account
 
   def deposit(amount)
     Transaction.new('d',amount,nil,@account_number)
+
     current_acc_num = File.open(File.dirname(__FILE__ )+"/Accounts.txt", "r").to_a
-    current_acc_num.each_line do |line|
+    current_acc_num.each do |line|
       if(line.split(" ")[1]==@account_number)
+        @balance=line.split(" ")[3].to_i + amount.to_i
         line = line.split(" ")
-        line.splice(3, 1, @balance + amount)
+        line[3]= @balance
+        p "Deposit successful #{@balance}"
       end
     end
-
-
-    p "Deposit successful #{@balance}"
   end
 
   def withdrawal(amount)

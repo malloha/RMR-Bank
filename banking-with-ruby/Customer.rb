@@ -1,11 +1,10 @@
 class Customer
+
   def initialize(first_name, last_name,ssn, address)
     @first_name = first_name
     @last_name = last_name
     @ssn = ssn
     @address = address
-
-
 
     customer_num = File.open(File.dirname(__FILE__ )+"/Customers.txt", "r").to_a
     if(customer_num.empty?)
@@ -15,7 +14,7 @@ class Customer
     end
     customer = File.open(File.dirname(__FILE__ )+"/Customers.txt", "a")
     customer.puts "#{@customer_number} #{@first_name} #{@last_name} #{@ssn} #{@address}"
-
+    customer.close
 
     p "Customer created"
     print_details
